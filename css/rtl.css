@@ -1,0 +1,128 @@
+/* RTL Styles for Persian (Farsi) Website */
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Vazirmatn', 'Montserrat', sans-serif;
+}
+
+/* Header RTL adjustments */
+.logo {
+    margin-right: 0;
+}
+
+.nav-item {
+    margin: 0 0 0 1.5rem;
+}
+
+.header-actions {
+    flex-direction: row-reverse;
+}
+
+.theme-toggle {
+    margin-right: 0;
+    margin-left: var(--spacing-md);
+}
+
+/* Button RTL adjustments */
+.btn i {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.btn.btn-text i {
+    transform: rotate(180deg);
+}
+
+.service-link i,
+.btn i.fa-long-arrow-alt-left,
+.btn i.fa-arrow-left {
+    transform: rotate(180deg);
+    margin-right: 0.5rem;
+    margin-left: 0;
+}
+
+/* Service cards RTL adjustments */
+.service-bg {
+    clip-path: circle(0% at 95% 95%);
+}
+
+.service-card:hover .service-bg {
+    clip-path: circle(150% at 95% 95%);
+}
+
+/* Icons RTL adjustments */
+.product-features span i {
+    margin-right: 0;
+    margin-left: 0.8rem;
+}
+
+.footer-contact ul li i {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+
+/* Section titles RTL adjustments */
+.section-title::after {
+    left: auto;
+    right: 0;
+}
+
+.text-center .section-title::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.footer-links h3::after,
+.footer-services h3::after,
+.footer-contact h3::after {
+    left: auto;
+    right: 0;
+}
+
+/* Swiper slider RTL adjustments */
+.swiper-button-next:after {
+    content: 'prev';
+}
+
+.swiper-button-prev:after {
+    content: 'next';
+}
+
+/* Gallery RTL adjustments */
+.gallery-overlay h3,
+.gallery-overlay p {
+    text-align: center;
+}
+
+/* Forms RTL adjustments */
+.newsletter-form input {
+    border-radius: 0 var(--border-radius-full) var(--border-radius-full) 0;
+}
+
+.newsletter-form button {
+    border-radius: var(--border-radius-full) 0 0 var(--border-radius-full);
+}
+
+/* Mobile nav RTL adjustments */
+.mobile-nav {
+    right: auto;
+    left: -100%;
+}
+
+.mobile-nav.active {
+    right: auto;
+    left: 0;
+}
+
+.menu-toggle {
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-column h3:after {
+        right: 50%;
+        left: auto;
+        transform: translateX(50%);
+    }
+}

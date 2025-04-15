@@ -1,0 +1,189 @@
+/* Responsive Styles */
+
+/* Large Screens (1200px and up) */
+@media (min-width: 1200px) {
+    html {
+        font-size: 62.5%; /* 10px */
+    }
+}
+
+/* Medium Screens (992px to 1199px) */
+@media (max-width: 1199px) {
+    html {
+        font-size: 60%; /* 9.6px */
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-card.large {
+        grid-column: span 2;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+}
+
+/* Tablet Screens (768px to 991px) */
+@media (max-width: 991px) {
+    html {
+        font-size: 56.25%; /* 9px */
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .hero-title {
+        font-size: 6rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 2.8rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+    
+    .testimonials-slider .swiper-slide {
+        padding: 0 2rem;
+    }
+    
+    .cta-container {
+        flex-direction: column;
+    }
+    
+    .cta-image {
+        display: none;
+    }
+}
+
+/* Mobile Screens (576px to 767px) */
+@media (max-width: 767px) {
+    html {
+        font-size: 50%; /* 8px */
+    }
+    
+    .section-title {
+        font-size: 3.6rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card.large {
+        grid-column: span 1;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+    
+    .products-slider .swiper-button-prev,
+    .products-slider .swiper-button-next {
+        display: none;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    
+    .newsletter-form .form-group {
+        flex-direction: column;
+    }
+    
+    .newsletter-form button {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* Small Mobile Screens (up to 575px) */
+@media (max-width: 575px) {
+    .hero-title {
+        font-size: 4.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 2.4rem;
+    }
+    
+    .hero-description {
+        font-size: 1.6rem;
+    }
+    
+    .model-container {
+        height: 40rem;
+    }
+    
+    .model-controls {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    .model-features {
+        gap: 1rem;
+    }
+    
+    .feature-item {
+        padding: 1rem;
+    }
+    
+    .testimonial-card {
+        padding: 3rem 2rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Height-based media queries for the hero section */
+@media (max-height: 700px) {
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 15rem 0 10rem;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+}
